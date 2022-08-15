@@ -7,6 +7,10 @@
     overflow-x: hidden;
 }
 
+button:hover, li:hover{
+    cursor: pointer;
+}
+
 header{
     height: 75vh;
     width: 100vw;
@@ -39,7 +43,7 @@ nav ul li{
     margin: 0 15px;
 }
 
-ul i{
+nav ul i{
     margin: 0 10px;
 }
 
@@ -116,7 +120,7 @@ ul i{
     height: 255px;
     background-color: red;
     margin: 0 10px;
-    padding: 30px;
+    padding: 20px 30px;
 }
 #card1, #card3{
     background-color: #1e1e1e;
@@ -348,3 +352,146 @@ ul i{
 .footer ul li i{
     color: white;
 }
+
+/* Adding Responsiveness to the webpage */
+@media only screen and (max-width: 600px) {
+    nav img{
+        display: none;
+    }
+
+    nav ul{
+        width: 100%;
+        margin: 0 auto;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    nav ul li{
+        margin: 0 2px;
+        margin-top: 10px;
+    }
+
+    nav ul i{
+        margin: 0 5px;
+    }
+
+    header{
+        height: auto;
+    }
+
+    .container{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .details{
+        width: 80%;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    
+    .main-card{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        margin-top: 20px;
+        height: auto;
+    }
+
+    .card{
+        width: auto;
+        height: fit-content;
+        padding: 15px;
+    }
+
+    .achivement{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: auto;
+        height: auto;
+        margin-top: 15px;
+        background-color: #111111;
+    }
+
+    .other-achivement{
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .featured-heading{
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .featured-projects{
+        width: 100%;
+        margin: auto;
+        padding-left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .img{
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .projects p, .projects h4, .projects img{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .work-together > div{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .work-together > div button{
+        margin-right: 0;
+    }
+
+    .work-together{
+        padding: 5%;
+    }
+    
+    .work-text{
+        text-align: center;
+    }
+
+    .work-text h1{
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .work-text p{
+        width: 100%;
+    }
+
+    .footer-social ul li{
+        margin: 20px 10px;
+    }
+
+    .footer{
+        justify-content: space-around;
+    }
+    
+    .footer img{
+        margin: 0;
+    }
+  }
